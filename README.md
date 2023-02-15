@@ -66,7 +66,7 @@ If you use FastReID in your research or wish to refer to the baseline results pu
 }
 ```
 
-# 프로젝트 목적: 기업에서 제시한 세가지 Fast-reid base 모델 중 서비스 사용에 적합한 모델을 비교분석하여 선정
+## 프로젝트 목적: 기업에서 제시한 세가지 Fast-reid base 모델 중 서비스 사용에 적합한 모델을 비교분석하여 선정
   
 ## Dataset: 차량 외관 영상 데이터 ****- AI_Hub****
 **Data information**
@@ -78,6 +78,6 @@ If you use FastReID in your research or wish to refer to the baseline results pu
 - 색깔 (흰색, 검은색, 회색)
 - 방향 (앞, 뒤, 옆)
 
-# 결과: veri-wild 모델을 선정
-## 용량 문제로 데이터셋은 올리지 못함
-## 해당 모델로 YOLOv4-Deepsort를 이용해 두 CCTV 영상의 차량들을 매핑하는 것이 
+## 결과: veri-wild 모델을 선정
+### 용량 문제로 데이터셋은 올리지 못함
+### 해당 모델로 YOLOv4-Deepsort를 이용해 두 CCTV 영상의 차량들을 매핑하는 것이 목표
