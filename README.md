@@ -76,7 +76,7 @@ If you use FastReID in your research or wish to refer to the baseline results pu
 
 ## 비교 분석 방법
 - 색깔 (흰색, 검은색, 회색)에 따른 비교 분석
-- 
+
 가장 색상이 많은 흰색, 검은색, 회색으로 비교를 함
 
 **흰색**: veri-wild > veri > vehicleID
@@ -87,6 +87,7 @@ If you use FastReID in your research or wish to refer to the baseline results pu
 
 veri와 veri-wild가 색깔 비교는 비슷한 성능을 보였고 이를 토대로 방향에 대한 분석을 진행함
 
+
 - 방향 (앞, 뒤, 옆)에 따른 비교 분석
 
 모든 모델이 전반적으로 측면에 대해 매우 정확도가 낮은 모습을 보임
@@ -95,7 +96,9 @@ veri와 veri-wild가 색깔 비교는 비슷한 성능을 보였고 이를 토�
 
 **정면**: veri-wild > veri > vehicleID
 
+
 - 비교 분석 지표로는 Rank-m 방식을 사용
+
 
 **해당 프로젝트 CCTV 영상에서는 차량이 앞모습인 경우만 탐지하기 때문에 veri-wild를 사용하기로 함**
 
