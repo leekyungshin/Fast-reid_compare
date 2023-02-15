@@ -72,12 +72,25 @@ If you use FastReID in your research or wish to refer to the baseline results pu
 **Data information**
 - 차량 외관(차종, 연식, 색상, 트림)과 14개 파트(프론트범퍼, 리어범퍼, 타이어, A필러, C필러, 사이드미러, 앞도어, 뒷도어, 라디에이터그릴, 헤드램프, 리어램프, 보닛, 트렁크, 루프)를 식별할 수 있는 AI 학습용 데이터셋.
 - 데이터 형식은 jpg와 이미지에 대한 json이 있음.
-- 학습은 진행하지 않았기 때문에 validation set만을 사용함
+- 학습은 진행하지 않았기 때문에 train set은 사용하지 않고 validation set만을 사용함
 
 ## 비교 분석 방법
-- 색깔 (흰색, 검은색, 회색)
-- 방향 (앞, 뒤, 옆)
+- 색깔 (흰색, 검은색, 회색)에 따른 비교 분석
+가장 색상이 많은 흰색, 검은색, 회색으로 비교를 함
+**흰색**: veri-wild > veri > vehicleID
+**검은색**: veri = veri-wild > vehicleID
+**회색** veri > veri-wild > vehicleID
+veri와 veri-wild가 색깔 비교는 비슷한 성능을 보였고 이를 토대로 방향에 대한 분석을 진행함
+- 방향 (앞, 뒤, 옆)에 따른 비교 분석
+모든 모델이 전반적으로 측면에 대해 매우 정확도가 낮은 모습을 보임
+**후면**: veri > veri-wild > vehicleID
+**정면**: veri-wild > veri > vehicleID
 
-## 결과: veri-wild 모델을 선정
-### 용량 문제로 데이터셋은 올리지 못함
-### 해당 모델로 YOLOv4-Deepsort를 이용해 두 CCTV 영상의 차량들을 매핑하는 것이 목표
+- 비교 분석 지표로는 Rank-m 방식을 사용
+
+## 결과: 해당 프로젝트 CCTV 영상에서는 차량이 앞모습인 경우만 탐지하기 때문에 veri-wild를 사용하기로 함
+
+
+
+- 용량 문제로 데이터셋은 올리지 못함
+- 해당 모델로 YOLOv4-Deepsort를 이용해 두 CCTV 영상의 차량들을 매핑하는 것이 목표
