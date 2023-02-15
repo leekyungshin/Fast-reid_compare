@@ -75,29 +75,29 @@ If you use FastReID in your research or wish to refer to the baseline results pu
 - 학습은 진행하지 않았기 때문에 train set은 사용하지 않고 validation set만을 사용함
 
 ### 비교 분석 방법과 결과
-- 색깔 (흰색, 검은색, 회색)에 따른 비교 분석
+**색깔 (흰색, 검은색, 회색)에 따른 비교 분석**
 
-가장 색상이 많은 흰색, 검은색, 회색으로 비교를 함
+- 가장 색상이 많은 흰색, 검은색, 회색으로 비교를 함
 
-**흰색**: veri-wild > veri > vehicleID
+- **흰색**: veri-wild > veri > vehicleID
 
-**검은색**: veri = veri-wild > vehicleID
+- **검은색**: veri = veri-wild > vehicleID
 
-**회색** veri > veri-wild > vehicleID
+- **회색** veri > veri-wild > vehicleID
 
-veri와 veri-wild가 색깔 비교는 비슷한 성능을 보였고 이를 토대로 방향에 대한 분석을 진행함
-
-
-- 방향 (앞, 뒤, 옆)에 따른 비교 분석
-
-모든 모델이 전반적으로 측면에 대해 매우 정확도가 낮은 모습을 보임
-
-**후면**: veri > veri-wild > vehicleID
-
-**정면**: veri-wild > veri > vehicleID
+**veri와 veri-wild가 색깔 비교는 비슷한 성능을 보였고 이를 토대로 방향에 대한 분석을 진행함**
 
 
-- 비교 분석 지표로는 Rank-m 방식을 사용
+**방향 (앞, 뒤, 옆)에 따른 비교 분석**
+
+- 모든 모델이 전반적으로 측면에 대해 매우 정확도가 낮은 모습을 보임
+
+- **후면**: veri > veri-wild > vehicleID
+
+- **정면**: veri-wild > veri > vehicleID
+
+
+**비교 분석 지표로는 Rank-m 방식을 사용**
 
 
 **해당 프로젝트 CCTV 영상에서는 차량이 앞모습인 경우만 탐지하기 때문에 veri-wild를 사용하기로 함**
