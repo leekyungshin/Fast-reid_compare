@@ -66,15 +66,15 @@ If you use FastReID in your research or wish to refer to the baseline results pu
 }
 ```
 
-## 프로젝트 목적: 기업에서 제시한 세가지 Fast-reid base 모델 중 서비스 사용에 적합한 모델을 비교분석하여 선정
+### 프로젝트 목적: 기업에서 제시한 세가지 Fast-reid base 모델 중 서비스 사용에 적합한 모델을 비교분석하여 선정
   
-## Dataset: 차량 외관 영상 데이터 ****- AI_Hub****
+### Dataset: 차량 외관 영상 데이터 ****- AI_Hub****
 **Data information**
 - 차량 외관(차종, 연식, 색상, 트림)과 14개 파트(프론트범퍼, 리어범퍼, 타이어, A필러, C필러, 사이드미러, 앞도어, 뒷도어, 라디에이터그릴, 헤드램프, 리어램프, 보닛, 트렁크, 루프)를 식별할 수 있는 AI 학습용 데이터셋.
 - 데이터 형식은 jpg와 이미지에 대한 json이 있음.
 - 학습은 진행하지 않았기 때문에 train set은 사용하지 않고 validation set만을 사용함
 
-## 비교 분석 방법
+### 비교 분석 방법과 결과
 - 색깔 (흰색, 검은색, 회색)에 따른 비교 분석
 
 가장 색상이 많은 흰색, 검은색, 회색으로 비교를 함
