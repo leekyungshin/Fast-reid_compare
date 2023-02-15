@@ -1,14 +1,3 @@
-<img src=".github/FastReID-Logo.png" width="300" >
-
-[![Gitter](https://badges.gitter.im/fast-reid/community.svg)](https://gitter.im/fast-reid/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-Gitter: [fast-reid/community](https://gitter.im/fast-reid/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
-
-Wechat: 
-
-<img src=".github/wechat_group.png" width="150" >
-
-
 FastReID is a research platform that implements state-of-the-art re-identification algorithms. It is a ground-up rewrite of the previous version, [reid strong baseline](https://github.com/michuanhaohao/reid-strong-baseline).
 
 ## What's New
@@ -76,3 +65,19 @@ If you use FastReID in your research or wish to refer to the baseline results pu
   year={2020}
 }
 ```
+
+# 프로젝트 목적: 기업에서 제시한 세가지 Fast-reid base 모델 중 서비스 사용에 적합한 모델을 비교분석하여 선정
+  
+## Dataset: 차량 외관 영상 데이터 ****- AI_Hub****
+**Data information**
+- 차량 외관(차종, 연식, 색상, 트림)과 14개 파트(프론트범퍼, 리어범퍼, 타이어, A필러, C필러, 사이드미러, 앞도어, 뒷도어, 라디에이터그릴, 헤드램프, 리어램프, 보닛, 트렁크, 루프)를 식별할 수 있는 AI 학습용 데이터셋.
+- 데이터 형식은 jpg와 이미지에 대한 json이 있음.
+- 학습은 진행하지 않았기 때문에 validation set만을 사용함
+
+## 비교 분석 방법
+- 색깔 (흰색, 검은색, 회색)
+- 방향 (앞, 뒤, 옆)
+
+# 결과: veri-wild 모델을 선정
+## 용량 문제로 데이터셋은 올리지 못함
+## 해당 모델로 YOLOv4-Deepsort를 이용해 두 CCTV 영상의 차량들을 매핑하는 것이 
